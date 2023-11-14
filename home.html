@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="GOVERMENT.jpeg" type="image/x-icon">
+    <style>
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.copyh{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100px;
+}
+.header 
+{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 100%;
+  
+  
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #000;
+  padding: 35px 20px;
+}
+.intro 
+{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro p 
+{
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.Learnmore
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.Learnmore button 
+{
+    background-color: palegoldenrod;
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+ .Benefits
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.symtoms 
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+  overflow: auto;
+}
+
+.symtoms .work 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.symtoms .work i 
+{
+  width: fit-content;
+  font-size: 50px;
+  color: #333333;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}
+
+.symtoms .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.symtoms .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.aboutproject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.aboutproject img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.aboutproject-text h2 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.aboutproject-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: paleturquoise;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px ;
+}
+
+.bottom-links .links a 
+{
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}
+.downlayout
+{
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  width: 100%;
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.shashwatdiv1
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.privacy
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+.Anxiety
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+.Social-Anxiety
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+.Concerns
+{
+    font-size: 20px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+  
+}
+.anyother
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.anyother button {
+    background-color: lightgreen;
+    color: olive;
+    padding: 10px 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.ourdoctors
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dibbba
+{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 33%;
+  height: 150px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  
+}
+.dibbba2
+{
+    background-color: lightsalmon;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 33%;
+  height: 150px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  
+}
+.dibbba3
+{
+    background-color: whitesmoke;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 33%;
+  height: 150px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  
+}
+.dibbba4
+{
+    background-color: lightgrey;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 85%;
+  height: 80px;
+  border-radius: 50px;
+  margin-left: 10px;
+  overflow: auto;
+
+  
+}
+.dibbba5
+{
+    background-color: lightgreen;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 35%;
+  height: 80px;
+  border-radius: 5px;
+  margin-left:45px;
+  margin-right: 3%;
+  margin-bottom: 80px;
+  overflow: auto;
+}
+.dibbba6
+{
+    background-color: pink;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 35%;
+  height: 150px;
+  border-radius: 10px;
+  margin-left:10px;
+  margin-right: 3%;
+  overflow: auto;
+}
+.dibbba7
+{
+    background-color: peachpuff;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 35%;
+  height: 100px;
+  border-radius: 3px;
+  margin-left:10px;
+  margin-right: 3%;
+  margin-top: 50px;
+  overflow: auto;
+  
+}
+.dibbba8
+{
+    background-color: #5edaf0;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+  margin-left:10px;
+  margin-right: 3%;
+  overflow: auto;
+}
+.faqs
+{
+    margin-left: 10px;
+}
+.ht{
+    font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: none;
+
+}
+.lltt
+{
+    font-size: 15px;
+  font-family: 'Sriracha', cursive;
+  color: #000;
+  text-decoration: dashed;
+}
+.vh1
+{
+  text-decoration: none;
+  color: #a1a1a1;
+}
+.introD
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.goverment
+{
+   border-radius: 30px;
+   width:120px;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+      <img class="goverment" src="GOVERMENT.jpeg" alt="">
+        <a href="#" class="logo">BLUE WING'S</a>
+        <nav class="nav-items">
+          <a href="blog.html">BLOG</a>
+          <a href="#">ABOUT</a>
+          <a href="#">CONTACT</a>
+          <a href="signinpage.html">SINGIN</a>
+          <a href="loginpage.html">LOGIN</a>
+        </nav>
+      </header>
+      <div class="copyh">
+      </div>
+        <div>
+            <img class="intro" src="headerpic.jpg" alt="">
+        </div>
+        <div>
+            <em><h2>Common Health Concerns</h2></em>
+            <em><h2>Consult a Doctor for your Health</h2></em>
+        </div>
+        <div>
+            <div class="symtoms">
+                <div class="work">
+                  <p class="work-heading">Depression?
+                </p>
+                  <p class="work-text"></p>
+                  <img class="privacy" src="dip1.jpg" alt="">
+                  <em><a class="vh1" href="#">Viwe more>></a></em>
+                </div>
+                <div class="work">
+                  <p class="work-heading">Anxiety?</p>
+                  <p class="work-text"></p>
+                  <img class="Anxiety" src="dip3.jpg" alt="">
+                  <em><a class="vh1" href="Anxity.html">Viwe more>></a></em>
+                </div>
+                <div class="work">
+                  <p class="work-heading">Social-Anxiety?</p>
+                  <p class="work-text"></p>
+                  <img class="Social-Anxiety" src="dip3.jpg" alt="">
+                  <em><a class="vh1" href="socialanxity.html">Viwe more></a></em>
+                </div>
+                
+        </div>
+        <div class="anyother">
+            <button type="submit" ><em>Any other mental health problem</em></button>
+        </div>
+        <div class="ourdoctors">
+            <em><h2>Our Doctors</h2></em>
+        </div>
+        <div>
+            <div class="symtoms">
+                <div class="work">
+                  <p class="work-heading">Dr. vasundhara
+                </p>
+                  <p class="work-text"></p>
+                  <img class="privacy" src="doc1.jpg" alt="">
+                  <em><a class="vh1" href="#">Consult now>></a></em>
+                </div>
+                <div class="work">
+                  <p class="work-heading">Dr.Smarath</p>
+                  <p class="work-text"></p>
+                  <img class="Anxiety" src="doc2.jpg" alt="">
+                  <em><a class="vh1" href="#">Consult now>></a></em>
+                </div>
+                <div class="work">
+                  <p class="work-heading">Dr.hakin</p>
+                  <p class="work-text"></p>
+                  <img class="Social-Anxiety" src="doc3.jpg" alt="">
+                  <em><a class="vh1" href="#">Consult now>></a></em>
+                </div>
+                
+        </div>
+        <div>
+            <div class="Benefits">
+                <em><h2>Benefits Of Online Consultation </h2></em>
+            </div>
+        <div class="symtoms">
+          <div class="work">
+            <i class="fas fa-atom"></i>
+            <p class="work-heading">>>convenience</p>
+            <p class="work-text"></p>
+            <em>Patients can access healthcare professionals from the comfort of their homes or any location with an internet connection. This eliminates the need for travel and waiting times, making healthcare more accessible.</em>
+          </div>
+          <div class="work">
+            <i class="fas fa-skiing"></i>
+            <p class="work-heading">>>Accessbility</p>
+            <p class="work-text"></p>
+            <em>Online consultations can bridge geographical barriers, ensuring that individuals in remote or underserved areas can access medical expertise.</em>
+          </div>
+          <div class="work">
+            <i class="fas fa-ethernet"></i>
+            <p class="work-heading">>>Privacy</p>
+            <p class="work-text"></p>
+            <em>Some patients may feel more comfortable discussing sensitive health issues in the privacy of their homes rather than in a clinical setting.</em>
+          </div>
+          
+        </div>
+        <div class="symtoms">
+            <div class="work">
+              <i class="fas fa-atom"></i>
+              <p class="work-heading">>>Reduced Cost</p>
+              <p class="work-text"></p>
+              <em>Online consultations can be more cost-effective, as patients save on transportation, parking, and other related expenses.</em>
+            </div>
+            <div class="work">
+              <i class="fas fa-skiing"></i>
+              <p class="work-heading">>>Access to Specialists</p>
+              <p class="work-text"></p>
+              <em>Patients can connect with mental health professionals who specialize in their specific concerns, such as anxiety, depression, trauma, or addiction. This specialization can lead to more effective treatment.</em>
+            </div>
+            <div class="work">
+              <i class="fas fa-ethernet"></i>
+              <p class="work-heading">>>Variety of Services</p>
+              <p class="work-text"></p>
+              <em>Online mental health platforms offer a wide range of services, including therapy, counseling, psychiatric consultations, and self-help resources. Patients can find the specific type of support that best suits their needs.</em>
+            </div>
+            
+          </div>
+        
+        
+    </div>
+    
+    <div class="Learnmore">
+        <button type="submit"  class="btn">Learnmore...</button>
+    </div>
+    <div >
+      <img class="introD" src="BRAIN BUTTERFLY GIRL.png" alt="">
+  </div>
+    <div class="faqs">
+        <h2 class="ht">FAQS</h2>
+    </div>
+    <div class="downlayout">
+        <div style="display: flex;"">
+            <div class="dibbba">
+                <em>DIFFERENCE BETWEEN 
+                    ANXIETY ATTACK
+                    AND PANIC ATTACK</em>
+            </div>
+            <div class="dibbba2">
+                <em>WHAT DOES DEPRESSION LOOK LIKE IN CHILDREN?</em>
+            </div>
+            <div class="dibbba3">
+                <em>SIGNS THAT YOUR CHILD IS DEALING WITH ANXIETY</em>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="dibbba4">
+                <em>10 WAYS TO HELP AN ANXIOUS KID.</em>
+            </div>
+            <div class="dibbba5">
+                <em>NURTURE YOUR CHILD’S MENTAL HEALTH </em>
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="dibbba6">
+                <em>ANXIETY IN GROWING 
+                    TEENAGERS AND 
+                    IT’S SYMPTOMS</em>
+            </div>
+            <div class="dibbba7">
+                <em>10 WAYS TO HELP AN ANXIOUS KID.</em>
+            </div>
+            <div class="dibbba8">
+                <em>13 WAYS TO SUPPORT YOUR TEEN IN FROWING SELF LOVE!</em>
+            </div>
+        </div>
+      </div>
+      </main>
+      <footer class="footer">
+        <div class="copy"></div>
+        <div class="bottom-links">
+          <div class="links">
+            <span>CONTACT US </span>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="links">
+            <span>Social Links</span>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>

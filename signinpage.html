@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINGIN PAGE</title>
+    <link rel="shortcut icon" href="GOVERMENT.jpeg" type="image/x-icon">
+    <style>
+      *{
+        border-radius: 50px;
+      }
+      .form2
+      {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+form 
+{
+  border: 3px solid #f1f1f1;
+  background-color: aliceblue;
+  width: 70%;
+  background-image: url(BRAIN\ BUTTERFLY\ GIRL.png); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+
+
+button {
+  background-color: brown;
+  color:burlywood;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.photo
+{
+    
+    width: 24px; 
+    height: 24px;
+    background-image: url("icon.png"); 
+    background-size: cover; 
+    background-color: #ff0000;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 0px;
+
+}
+
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+
+.container {
+  padding: 16px;
+  opacity: 0.5;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.btn:hover
+{
+  background-color: burlywood;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+.Username
+{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            bottom: 50%;
+}
+.pass
+{
+    display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            bottom: 50%;
+}
+.l1
+{
+  text-decoration: none;
+  color: #a1a1a1;
+}
+    </style>
+</head>
+<body class="form2">
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img class="photo" src="GOVERMENT.jpeg" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label class="Username"" for="uname"><b>USERNAME</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label class="pass" for="psw"><b>ENTER YOUR EMAIL</b></label>
+      <input type="text" placeholder="EMAIL" name="psw" required>
+      <label class="Username"" for="uname"><b>PASSWORD</b></label>
+      <input type="password" placeholder="Password" name="uname" required>
+  
+      <label class="pass" for="psw"><b>CONFIRM YOUR PASSWORD</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">CREATE</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    
+    <div class="container">
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <em>already have a  account ? <a class="l1" href="details.html">Login</a></em><BR>
+      <a class="l1" href="HOME PAGE .HTML"><em>Home</em></a></BR>
+    </div>
+  </form>
+</body>
+</html>
