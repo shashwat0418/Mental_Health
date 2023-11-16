@@ -459,11 +459,62 @@ body {
    border-radius: 30px;
    width:120px;
 }
+.contact{
+  width: 100%;
+  height: auto;
+ 
+  margin-top: 10px;
+}
+.con1 h2{
+  margin-left: 20px;
+}
+.con2{
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-around;
+}
+.condibbas{
+  display:block;
+  width:16%;
+  height: auto;
+  overflow: auto;
+}
+.social-icons {
+    display: flex;
+   
+}
+
+.icon {
+    
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #ccc;
+    background-size: contain;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.facebook {
+  background-image: url(facboookicon.png); 
+   }
+.twitter { background-image: url(instagram.webp); }
+.instagram { background-image: url(twitter.png); }
+
+.icon:hover {
+    transform: scale(1.2); 
+}
+.con2 a{
+  text-decoration: none;
+  color: #bc2a8d;
+  font-size: 20px;
+  font-family: 'Sriracha', cursive;
+}
 </style>
 </head>
 <body>
     <header class="header">
-      <img class="goverment" src="GOVERMENT.jpeg" alt="">
+      <img class="goverment" src="nationalemv.png" alt="">
         <a href="#" class="logo">BLUE WING'S</a>
         <nav class="nav-items">
           <a href="blog.html">BLOG</a>
@@ -489,7 +540,7 @@ body {
                 </p>
                   <p class="work-text"></p>
                   <img class="privacy" src="dip1.jpg" alt="">
-                  <em><a class="vh1" href="#">Viwe more>></a></em>
+                  <em><a class="vh1" href="dipresion.html">Viwe more>></a></em>
                 </div>
                 <div class="work">
                   <p class="work-heading">Anxiety?</p>
@@ -506,7 +557,7 @@ body {
                 
         </div>
         <div class="anyother">
-            <button type="submit" ><em>Any other mental health problem</em></button>
+            <button type="submit" ><em><a href="problems.html">Any other mental health problem</a></em></button>
         </div>
         <div class="ourdoctors">
             <em><h2>Our Doctors</h2></em>
@@ -588,7 +639,7 @@ body {
         <button type="submit"  class="btn">Learnmore...</button>
     </div>
     <div >
-      <img class="introD" src="BRAIN BUTTERFLY GIRL.png" alt="">
+      <img class="introD" src="down.jpeg" alt="">
   </div>
     <div class="faqs">
         <h2 class="ht">FAQS</h2>
@@ -607,7 +658,7 @@ body {
                 <em>SIGNS THAT YOUR CHILD IS DEALING WITH ANXIETY</em>
             </div>
         </div>
-        <div style="display: flex;">
+        <div style="display: flex;"> 
             <div class="dibbba4">
                 <em>10 WAYS TO HELP AN ANXIOUS KID.</em>
             </div>
@@ -630,23 +681,51 @@ body {
         </div>
       </div>
       </main>
-      <footer class="footer">
-        <div class="copy"></div>
-        <div class="bottom-links">
-          <div class="links">
-            <span>CONTACT US </span>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </div>
-          <div class="links">
-            <span>Social Links</span>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
+      <div class="contact">
+        <div class="con1">
+          <h2>Blue Wings</h2>
+          
         </div>
-      </footer>
+        <div class="con2">
+          <div class="condibbas">
+            <h3>About-blueWings</h3>
+            <a href="#">Who WE are</a><br>
+            <a href="#">blog</a>
+            <br>
+            <a href="#">Work with us</a><br>
+            <a href="#">investors-relations</a><br>
+            <a href="#">contact-us</a>
+          </div>
+          <div class="condibbas">
+            <h3>Other-Services</h3>
+            <a href="#">Blue-wing</a><br>
+            <a href="#">docer's</a>
+            <br>
+            <a href="#">minders</a><br>
+            <a href="#">sumits</a><br>
+            <a href="#"></a>
+          </div>
+          <div class="condibbas">
+            <h3>Learnmore</h3>
+            <a href="#">Privacy</a><br>
+            <a href="#">Security</a>
+            <br>
+            <a href="#">Terms</a><br>
+            <a href="#">Site-Map</a><br>
+            <a href="#">contact-us</a>
+          </div>
+          <div class="condibbas">
+            <h3 style="margin-left: 10px;">Social-Links</h3>
+            <div class="social-icons">
+              <a href="#" class="icon facebook"></a>
+              <a href="#" class="icon twitter"></a>
+              <a href="#" class="icon instagram"></a>
+          </div>
+          </div>
+          
+        </div>
+      </div> 
       
 </body>
 </html>
+            
